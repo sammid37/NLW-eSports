@@ -1,0 +1,98 @@
+/* @sammid37's custom CSS for Louie Application */
+/* Most of the colors paletter where extracted from the Rosé Pine Theme */
+:root {
+  --white:#fff;
+  --text: #575279;
+  --muted: #9893a5;
+  --subtle: #797593;
+  --gray: #e3dad2;
+  --base: #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --foam: #619396;
+  --blush: #b4637a;
+}
+
+body {
+  display:block;
+  padding: 0;
+  margin: auto;
+  background-color: var(--base);
+  font-family: 'Space Mono';
+  text-align: center;
+  color: var(--text);
+}
+
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  width: 65%;
+  padding: 2rem;
+}
+/* Landing page styles */
+.landing-h1 {font-family: 'Josefin Sans', sans-serif; font-size: 64px;}
+.landing-h2 {font-size: 32px; font-weight: 400; margin-top: -24px;}
+.landing-p {margin-top: 60px; font-size: 18px;}
+.landing-button {
+  font-family: 'Space Mono', monospace;
+  font-style: italic;
+  font-weight: 700;
+  size: 18px;
+  color: var(--white);
+  padding: 15px;
+  width: 370px;
+  margin: 40px 0px 40px 0px;
+  background-color: var(--foam);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.landing-louie {
+  margin-top: -20px;
+  margin-bottom: -37px;
+}
+/* Footer styles */
+/* Footer div */
+.footer { 
+  display: flex; 
+  background-color: var(--overlay);
+  padding: 5% 10% 5% 10%;
+}
+
+.footer a, .footer a:hover {
+  font-weight: 700;
+  color: var(--foam);
+}
+.footer-logo { width: 28%; }
+.footer-msg { width: 37%; }
+/* .footer-img { width: 30%;} */
+
+/* Footer text */
+.footer-h1 {
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+}
+.footer-h2 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -20px;
+}
+.footer-p1 {
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer-p2 {
+  text-align: left;
+  font-style: italic;
+  margin-top: -12px;
+  font-size: 12px;
+}
