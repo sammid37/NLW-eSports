@@ -14,7 +14,7 @@
 }
 
 body {
-  display:block;
+  display: block !important;
   padding: 0;
   margin: auto;
   background-color: var(--base);
@@ -28,6 +28,145 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+.navbar {
+  background-color: var(--overlay);
+}
+.navbar-logo {display: inline-flex; align-items: center; gap: 20px; text-align: left;}
+.navbar-h1 {font-family: 'Josefin Sans', sans-serif; font-size: 32px;}
+.navbar-h2 {font-size: 16px; font-weight: 400;}
+
+.title {font-size: 32px; text-align: left; font-style: italic;}
+.subtitle {font-size: 18px; text-align: left; margin-top: -16px; font-style: italic;}
+
+.supplies-btn-view-list {
+  background-color: #619396; 
+  padding: 7px;
+  border-radius: 12px;
+  width: 180px;
+  margin-left: 32px;
+  border: none; 
+  font-family: 'Space Mono', monospace; 
+  font-weight: 700; 
+  font-style: italic;
+  font-size: 14px;
+  cursor: pointer;
+}
+/** TABLE DATABASE **/
+.louie-database {
+  border-collapse: collapse;
+  width: 100%;
+}
+.louie-database td, .louie-database th {
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px dashed var(--muted);
+  padding: 7px;
+}
+.louie-database td img {width: 80px}
+.louie-database td button {
+  cursor: pointer;
+  border: 1px solid var(--muted); 
+  background-color: var(--base); 
+  border-radius: 3px; 
+  padding: 4px; 
+  margin: 3px 0px 3px 0px;
+}
+.louie-database td button:hover {background-color: var(--overlay);}
+
+/* .louie-database tr:nth-child(even){background-color: pink;} */
+.louie-database tr:hover{background-color: var(--overlay);}
+.louie-database th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+.louie-database #l-desc { width: 40%;}
+.louie-database #l-price { width: 10%;}
+
+
+
+
+/** FORMS **/
+.louie-forms {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  gap: 50px;
+}
+input, textarea {font-family: "Space Mono", monospace; font-style: italic; font-size: 12px;}
+.louie-label {
+  display: inline-block;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 7px 0px 7px 0px ;
+}
+.louie-input-text, .louie-textarea, .louie-price {
+  border: none;
+  background-color: var(--overlay);
+  color: var(--text);
+  border-radius: 7px;
+  width: 370px;
+  padding: 12px;
+}
+.louie-price {
+  -moz-appearance: textfield;
+}
+
+.louie-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.louie-file {
+  font-size: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-style: italic;
+  border: 1px dashed var(--muted);
+  border-radius: 3px;
+  padding: 20px;
+  width: 320px;
+
+}
+.louie-submit {
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 3px;
+  width: 320px;
+  background-color: var(--foam);
+  color: var(--base);
+  margin-top: 10px;
+}
+/* Reset input radio to make a custom input radio :D */
+/* input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--overlay);
+  margin: 0;
+  border: none;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+.louie-input-radio {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+} */
 
 .container {
   margin: auto;
