@@ -18,7 +18,6 @@ import java.util.List;
 
 @RestController
 @CrossOrigin("http://localhost:5173")
-
 // @CrossOrigin("http://127.0.0.1:5173")
 public class SuppliesController {
     @Autowired
@@ -51,6 +50,7 @@ public class SuppliesController {
                 supply.setDescription(newSupplies.getDescription());
                 supply.setBrand(newSupplies.getBrand());
                 supply.setGrade(newSupplies.getGrade());
+                supply.setCategory(newSupplies.getCategory());
                 supply.setPrice(newSupplies.getPrice());
 
                 return suppliesRepository.save(supply);

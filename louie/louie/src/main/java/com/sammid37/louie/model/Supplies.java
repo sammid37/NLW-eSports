@@ -16,7 +16,7 @@ public class Supplies {
     private String brand;
     private String grade; 
     private float price;
-    //* remember to add image propertie
+    private String category;
     
     // methods GET and SET of the Art Supplies
     // ID
@@ -57,6 +57,13 @@ public class Supplies {
     }
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getGrade() {
