@@ -1,5 +1,7 @@
+/** Global CSS**/
 /* @sammid37's custom CSS for Louie Application */
 /* Most of the colors paletter where extracted from the Rosé Pine Theme */
+
 :root {
   --white:#fff;
   --text: #575279;
@@ -23,215 +25,59 @@ body {
   color: var(--text);
 }
 
-
 #root {
   margin: 0 auto;
   text-align: center;
 }
-
-.navbar {
-  background-color: var(--overlay);
-}
-.navbar-logo {display: inline-flex; align-items: center; gap: 20px; text-align: left;}
-.navbar-h1 {font-family: 'Josefin Sans', sans-serif; font-size: 32px;}
-.navbar-h2 {font-size: 16px; font-weight: 400;}
-
-.title {font-size: 32px; text-align: left; font-style: italic;}
-.subtitle {font-size: 18px; text-align: left; margin-top: -16px; font-style: italic;}
-
-.supplies-btn-view-list {
-  background-color: #619396; 
-  padding: 7px;
-  border-radius: 12px;
-  width: 180px;
-  margin-left: 32px;
-  border: none; 
-  font-family: 'Space Mono', monospace; 
-  font-weight: 700; 
-  font-style: italic;
-  font-size: 14px;
-  cursor: pointer;
-}
-/** TABLE DATABASE **/
-.louie-database {
-  border-collapse: collapse;
-  width: 100%;
-}
-.louie-database td, .louie-database th {
-  text-align: left;
-  vertical-align: top;
-  border-top: 1px dashed var(--muted);
-  padding: 7px;
-}
-.louie-database td img {width: 80px}
-.louie-database td button {
-  cursor: pointer;
-  border: 1px solid var(--muted); 
-  background-color: var(--base); 
-  border-radius: 3px; 
-  padding: 4px; 
-  margin: 3px 0px 3px 0px;
-}
-.louie-database td button:hover {background-color: var(--overlay);}
-
-/* .louie-database tr:nth-child(even){background-color: pink;} */
-.louie-database tr:hover{background-color: var(--overlay);}
-.louie-database th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-}
-.louie-database #l-desc { width: 40%;}
-.louie-database #l-price { width: 10%;}
-
-
-
-
-/** FORMS **/
-.louie-forms {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: left;
-  gap: 50px;
-}
-input, textarea {font-family: "Space Mono", monospace; font-style: italic; font-size: 12px;}
-.louie-label {
-  display: inline-block;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: bold;
-  margin: 7px 0px 7px 0px ;
-}
-.louie-input-text, .louie-textarea, .louie-price {
-  border: none;
-  background-color: var(--overlay);
-  color: var(--text);
-  border-radius: 7px;
-  width: 370px;
-  padding: 12px;
-}
-.louie-price {
-  -moz-appearance: textfield;
-}
-
-.louie-textarea {
-  resize: none;
-  height: 100px;
-}
-
-.louie-file {
-  font-size: 10px;
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
-  font-style: italic;
-  border: 1px dashed var(--muted);
-  border-radius: 3px;
-  padding: 20px;
-  width: 320px;
-
-}
-.louie-submit {
-  cursor: pointer;
-  font-family: "Space Mono", monospace;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: bold;
-  border: none;
-  padding: 12px;
-  border-radius: 3px;
-  width: 320px;
-  background-color: var(--foam);
-  color: var(--base);
-  margin-top: 10px;
-}
-/* Reset input radio to make a custom input radio :D */
-/* input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--overlay);
-  margin: 0;
-  border: none;
-  font: inherit;
-  width: 1.15em;
-  height: 1.15em;
-  border-radius: 50%;
-  display: grid;
-  place-content: center;
-}
-.louie-input-radio {
-  font-size: 18px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.1;
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em;
-} */
 
 .container {
   margin: auto;
   width: 65%;
   padding: 2rem;
 }
-/* Landing page styles */
-.landing-h1 {font-family: 'Josefin Sans', sans-serif; font-size: 64px;}
-.landing-h2 {font-size: 32px; font-weight: 400; margin-top: -24px;}
-.landing-p {margin-top: 60px; font-size: 18px;}
-.landing-button {
-  font-family: 'Space Mono', monospace;
-  font-style: italic;
-  font-weight: 700;
-  size: 18px;
-  color: var(--white);
-  padding: 15px;
-  width: 370px;
-  margin: 40px 0px 40px 0px;
-  background-color: var(--foam);
-  border: none;
-  border-radius: 3px;
+
+/* Text */
+a {text-decoration: none; color: var(--foam);}
+#link-color {color: var(--text);}
+.title, .subtitle {text-align: left; font-style: italic;}
+.subtitle {font-size: 18px; margin-top: -16px;}
+.title {font-size: 32px; }
+.notes {font-size: 9px; color: var(--muted);}
+/* 
+.louie-left {width: 35%;}
+.louie-right {width: 55%;} */
+#asterisk{font-size: 10px; color: var(--blush);}
+
+/* Navbar, footer */
+.louie-mascot {width: 40%;}
+nav{position: stick; display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0.2rem 16rem;}
+.navbar-links {display: flex; margin: 0 -1em;}
+.navbar-links a {display: inline-block; margin: 0 1em;}
+.navbar, .footer {background-color: var(--overlay);}
+.navbar-logo {display: inline-flex; align-items: center; gap: 20px; text-align: left;}
+.navbar-h1 {font-family: 'Josefin Sans', sans-serif; font-size: 32px;}
+.navbar-h2 {font-size: 16px; font-weight: 400;}
+.navbar-btn {border: none; background-color: transparent;}
+.supplies-btn-view-list {
   cursor: pointer;
-}
-.landing-louie {
-  margin-top: -20px;
-  margin-bottom: -37px;
-}
-/* Footer styles */
-/* Footer div */
-.footer { 
-  display: flex; 
-  background-color: var(--overlay);
-  padding: 5% 10% 5% 10%;
+  font-family: 'Space Mono', monospace; 
+  font-style: italic;
+  font-weight: 700; 
+  font-size: 14px;
+  background-color: var(--foam); 
+  border-radius: 12px;
+  border: none; 
+  padding: 7px;
+  width: 180px;
+  margin-left: 32px;
 }
 
-.footer a, .footer a:hover {
-  font-weight: 700;
-  color: var(--foam);
-}
+.footer { display: flex; padding: 5% 10% 5% 10%;}
 .footer-logo { width: 28%; }
 .footer-msg { width: 37%; }
-/* .footer-img { width: 30%;} */
-
-/* Footer text */
-.footer-h1 {
-  text-align: left;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 32px;
-}
-.footer-h2 {
-  text-align: left;
-  font-weight: 400;
-  font-size: 16px;
-  margin-top: -20px;
-}
-.footer-p1 {
-  text-align: left;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
-}
-.footer-p2 {
-  text-align: left;
-  font-style: italic;
-  margin-top: -12px;
-  font-size: 12px;
-}
+.footer-h1, .footer-h2, .footer-p1, .footer-p2 {text-align: left;}
+.footer-h1 { font-family: 'Josefin Sans', sans-serif; font-size: 32px;}
+.footer-h2 { font-weight: 400; font-size: 16px; margin-top: -20px;}
+.footer-p1, .footer-p2 {font-style: italic;}
+.footer-p1 { font-weight: bold; font-size: 18px; }
+.footer-p2 { margin-top: -12px; font-size: 12px;}

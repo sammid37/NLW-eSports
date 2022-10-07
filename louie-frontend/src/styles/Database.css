@@ -1,0 +1,51 @@
+/** Database **/
+/* sammid37 */
+
+.louie-database {border-collapse: collapse; width: 100%;}
+
+.louie-database td {
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px dashed var(--muted);
+  padding: 7px;
+}
+.louie-database tr:hover{background-color: var(--overlay);}
+
+#delete {background-color: var(--blush);}
+.louie-database td button {
+  cursor: pointer;
+  background-color: var(--base); 
+  margin: 3px 0px 3px 0px;
+  padding: 4px; 
+  border-radius: 3px; 
+  border: 1px solid var(--muted); 
+}
+.louie-database td button:hover {background-color: var(--overlay);}
+.louie-database td img {width: 120px}
+/* .louie-database #l-desc { width: 40%;} */
+/* .louie-database #l-price { width: 10%;} */
+.louie-search {box-sizing: border-box; margin: auto;}
+.louie-search-bar {
+  font-size: 12px;
+  color: var(--subtle);
+  width: 90%; 
+  background-color: var(--overlay); 
+  border: none;
+  border-radius: 7px 0px 0px 7px; 
+  padding: 12px;
+  float: left;
+}
+.louie-search-bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.louie-search-button {
+  cursor: pointer;
+  float: left;
+  border-radius: 0px 7px 7px 0px; 
+  padding: 12px;  
+  background-color: var(--overlay); 
+  width: 10%;
+  border: none;
+}

@@ -1,0 +1,66 @@
+/** FORMS **/
+/* sammid37 */
+
+input, textarea {font-family: "Space Mono", monospace !important; font-style: italic; font-size: 12px;}
+
+.louie-forms {
+  width: 100%;
+  display: inline-flex;
+  flex-flow:row;
+  text-align: left;
+  gap: 50px;  
+}
+
+.louie-label {
+  display: inline-block;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 10px 0px 7px 0px ;
+}
+
+input[name="name"], input[name="url"], textarea[name="description"], input[type="submit"] {width: 100%;}
+
+.louie-input-text, .louie-textarea, .louie-price, .louie-submit {
+  background-color: var(--overlay);
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  color: var(--text);
+}
+
+.louie-row {display: flex; align-items:flex-start;}
+.louie-row div {  margin-right: 20px;padding: 0px;}
+
+.louie-select {
+  font-family: "Space Mono", monospace;
+  color: var(--text);
+  border: none;
+  padding: 12px;
+  background-color: var(--overlay);
+  border-radius: 7px;
+}
+
+/* .louie-price { -moz-appearance: textfield;} */
+.louie-textarea { resize: none; height: 100px; }
+
+.louie-image-preview {
+  font-style: italic;
+  font-size: 12px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px dashed var(--muted);
+}
+
+.louie-image-preview img {width: 100%;}
+
+.louie-submit {
+  width: 394px !important;
+  cursor: pointer;
+  background-color: var(--foam);
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--base);
+}
